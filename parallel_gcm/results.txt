@@ -1,0 +1,34 @@
+Pentium G630
+============
+Sandy Bridge, no AES-NI, 2 cores, 2 threads
+https://ark.intel.com/de/products/53483/Intel-Pentium-Processor-G630-3M-Cache-2_70-GHz
+
+Benchmark1_gogcm-2                   500           2659003 ns/op          49.29 MB/s
+Benchmark2coop_gogcm-2              1000           1401251 ns/op          93.54 MB/s
+Benchmark2_gogcm-2                  1000           1360098 ns/op          96.37 MB/s
+Benchmark4_gogcm-2                  1000           1355992 ns/op          96.66 MB/s
+Benchmark8_gogcm-2                  1000           1354713 ns/op          96.75 MB/s
+
+Benchmark1_opensslgcm-2             2000            736773 ns/op         177.90 MB/s
+Benchmark2_opensslgcm-2             2000            525383 ns/op         249.48 MB/s
+Benchmark2coop_opensslgcm-2         2000            563401 ns/op         232.64 MB/s
+Benchmark4_opensslgcm-2             2000            514463 ns/op         254.77 MB/s
+Benchmark8_opensslgcm-2             2000            531059 ns/op         246.81 MB/s
+
+Xeon E31245
+===========
+Sandy Bridge, with AES-NI, 4 cores, 8 threads
+https://ark.intel.com/de/products/52274/Intel-Xeon-Processor-E3-1245-8M-Cache-3_30-GHz
+
+Benchmark1_gogcm-8            	    5000	    282694 ns/op	 463.65 MB/s
+Benchmark2coop_gogcm-8        	   10000	    211683 ns/op	 619.19 MB/s
+Benchmark2_gogcm-8            	   20000	     99704 ns/op	1314.60 MB/s
+Benchmark4_gogcm-8            	   20000	     75282 ns/op	1741.07 MB/s
+Benchmark8_gogcm-8            	   20000	     69611 ns/op	1882.90 MB/s
+
+Benchmark1_opensslgcm-8       	   10000	    442063 ns/op	 296.50 MB/s
+Benchmark2_opensslgcm-8       	   10000	    167494 ns/op	 782.54 MB/s
+Benchmark2coop_opensslgcm-8   	   10000	    270046 ns/op	 485.37 MB/s
+Benchmark4_opensslgcm-8       	   10000	    135209 ns/op	 969.40 MB/s
+Benchmark8_opensslgcm-8       	   10000	    132285 ns/op	 990.83 MB/s
+
