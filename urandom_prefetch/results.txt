@@ -1,0 +1,31 @@
+Linux 4.10.17 @ Pentium G630
+============================
+$ uname -a
+Linux br 4.10.17-200.fc25.x86_64 #1 SMP Mon May 22 18:12:57 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+$ go test -bench .
+Benchmark16-2      	 3000000	       573 ns/op	  27.90 MB/s
+Benchmark64-2      	 5000000	       291 ns/op	  54.84 MB/s
+Benchmark128-2     	10000000	       218 ns/op	  73.34 MB/s
+Benchmark256-2     	10000000	       189 ns/op	  84.35 MB/s
+Benchmark512-2     	10000000	       163 ns/op	  97.72 MB/s
+Benchmark1024-2    	10000000	       154 ns/op	 103.71 MB/s
+Benchmark2048-2    	10000000	       150 ns/op	 106.10 MB/s
+Benchmark4096-2    	10000000	       150 ns/op	 106.22 MB/s
+Benchmark40960-2   	10000000	       149 ns/op	 106.70 MB/s
+
+
+Linux 3.16.0 @ Xeon E31245
+==========================
+$ uname -a
+Linux ge 3.16.0-4-amd64 #1 SMP Debian 3.16.39-1+deb8u2 (2017-03-07) x86_64 GNU/Linux
+$ go test -bench .
+Benchmark16-4      	 1000000	      1340 ns/op	  11.94 MB/s
+Benchmark64-4      	 1000000	      1285 ns/op	  12.44 MB/s
+Benchmark128-4     	 1000000	      1362 ns/op	  11.74 MB/s
+Benchmark256-4     	 1000000	      1219 ns/op	  13.12 MB/s
+Benchmark512-4     	 1000000	      1106 ns/op	  14.46 MB/s
+Benchmark1024-4    	 1000000	      1324 ns/op	  12.08 MB/s
+Benchmark2048-4    	 1000000	      1061 ns/op	  15.08 MB/s
+Benchmark4096-4    	 1000000	      1260 ns/op	  12.69 MB/s
+Benchmark40960-4   	 1000000	      1330 ns/op	  12.03 MB/s
+
