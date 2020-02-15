@@ -32,3 +32,18 @@ Benchmark2coop_opensslgcm-8   	   10000	    270046 ns/op	 485.37 MB/s
 Benchmark4_opensslgcm-8       	   10000	    135209 ns/op	 969.40 MB/s
 Benchmark8_opensslgcm-8       	   10000	    132285 ns/op	 990.83 MB/s
 
+Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+=======================================
+Ivy Bridge, with AES-NI, 4 cores, 4 threads
+https://ark.intel.com/content/www/de/de/ark/products/68316/intel-core-i5-3470-processor-6m-cache-up-to-3-60-ghz.html
+
+Benchmark1_gogcm-4            	    6663	    159588 ns/op	 821.31 MB/s
+Benchmark2coop_gogcm-4        	    5304	    218954 ns/op	 598.63 MB/s
+Benchmark2_gogcm-4            	   10293	    116524 ns/op	1124.85 MB/s
+Benchmark4_gogcm-4            	   15824	     75498 ns/op	1736.10 MB/s
+Benchmark8_gogcm-4            	   19190	     61921 ns/op	2116.76 MB/s
+Benchmark1_opensslgcm-4       	    4251	    322613 ns/op	 406.28 MB/s
+Benchmark2_opensslgcm-4       	    6609	    187107 ns/op	 700.52 MB/s
+Benchmark2coop_opensslgcm-4   	    4533	    232985 ns/op	 562.58 MB/s
+Benchmark4_opensslgcm-4       	    9321	    121917 ns/op	1075.09 MB/s
+Benchmark8_opensslgcm-4       	   10353	    115310 ns/op	1136.69 MB/s
